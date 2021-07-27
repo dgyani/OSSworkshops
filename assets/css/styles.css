@@ -1,0 +1,124 @@
+.agenda-header {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 1rem;
+    width: 100%;
+}
+
+.agenda-content {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 1rem;
+    padding: 15px 0;
+    border-bottom: 4px solid #F3F1FA;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .agenda-header {
+        grid-template-rows: repeat(1, minmax(0, 1fr));
+        grid-template-columns: initial;
+        grid-row-gap: 1rem;
+    }
+    .agenda-content {
+        grid-template-rows: repeat(1, minmax(0, 1fr));
+        grid-template-columns: initial;
+        grid-row-gap: 1rem;
+    }
+    .accordion-status-bar {
+        display: none !important;
+    }
+    .agenda-header p:first-child {
+        grid-column: span 12 / span 12 !important;
+    }
+    .agenda-header p:last-child {
+        grid-column: span 12 / span 12 !important;
+    }
+}
+
+#speakers .row>div {
+    padding: 15px;
+}
+
+.card {
+    height: 100%;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-close {
+    background-color: #fff;
+}
+
+.accordion-status-bar {
+    display: block;
+    background-color: #ffd700;
+    border-radius: 15px 15px 0 0;
+    padding: 20px 24px;
+}
+
+.accordion-status-bar p {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.accordion-date-bar {
+    background-color: #3415a9;
+    color: #fff;
+    padding: 10px 24px;
+}
+
+.accordion-date-bar p {
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-radius: 0;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.accordion-item:last-of-type .accordion-collapse {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-button {
+    padding: 24px;
+    border-bottom: 2px solid #fff;
+}
+
+.accordion-button.accordion-blank::after {
+    flex-shrink: 0;
+    width: 0;
+    height: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #F3F1FA;
+    color: initial;
+    box-shadow: none;
+}
+
+.accordion-collapse {
+    background-color: #FBFBFE;
+}
+
+.accordion-button {
+    background-color: #fff !important;
+}
+
+.accordion-button {
+    background-color: #F3F1FA !important;
+}
