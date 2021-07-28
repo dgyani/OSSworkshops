@@ -1,12 +1,43 @@
-.header {
-    max-width: 1000px;
-    font-size: 50px;
+body {
+    font-size: 18px;
+    overflow-x: hidden;
 }
 
-@media(max-width: 992px) {
+section {
+    padding: 10rem 0;
+}
+
+footer {
+    padding: 8rem 0;
+}
+
+.header {
+    max-width: 1000px;
+    font-size: 48px;
+}
+
+@media(max-width: 1200px) {
     .header {
-        max-width: 600px;
-        font-size: 3rem;
+        max-width: 65vw;
+        font-size: 2rem;
+    }
+}
+
+
+/* @media(max-width: 1219px) {
+    .header {
+        max-width: 75vw;
+        font-size: 2rem;
+    }
+} */
+
+@media(max-width: 476px) {
+    section {
+        padding: 5rem 0;
+    }
+    .header {
+        max-width: 90vw;
+        font-size: 2rem;
     }
 }
 
@@ -25,9 +56,6 @@
 }
 
 @media (max-width: 768px) {
-    .header {
-        font-size: 2.5rem;
-    }
     .agenda-header {
         grid-template-rows: repeat(1, minmax(0, 1fr));
         grid-template-columns: initial;
@@ -130,10 +158,17 @@
     background-color: #FBFBFE;
 }
 
-.accordion-button {
+
+/* .accordion-button {
     background-color: #fff !important;
+
+
+} */
+
+.accordion-button:focus {
+    border-color: transparent;
 }
 
 .accordion-button {
-    background-color: #F3F1FA !important;
+    background-color: #F3F1FA;
 }

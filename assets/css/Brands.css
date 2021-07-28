@@ -18,9 +18,19 @@
     vertical-align: middle;
 }
 
+.master-logo {
+    width: 14%;
+}
+
 @media (max-width: 768px) {
     .master-logo {
-        width: 48%;
+        width: 25%;
         margin: 1px !important;
+    }
+}
+
+@media (max-width:467px) {
+    .master-logo {
+        width: 48%;
     }
 }
