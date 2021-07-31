@@ -85,10 +85,12 @@ footer {
     height: 100%;
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 .card:hover {
-    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.1s;
 }
 
 .btn-close {
